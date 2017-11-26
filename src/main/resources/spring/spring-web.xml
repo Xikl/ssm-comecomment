@@ -20,6 +20,7 @@
         <mvc:message-converters>
             <!--注入bean-->
             <ref bean="jsonMessageConverter"/>
+            <ref bean="stringHttpMessageConverter"/>
         </mvc:message-converters>
     </mvc:annotation-driven>
 
@@ -34,6 +35,7 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
+    <!--过滤空字符 配置-->
     <bean id="jsonMessageConverter" class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
         <property name="objectMapper">
             <bean class="com.fasterxml.jackson.databind.ObjectMapper">
@@ -41,6 +43,11 @@
                 <property name="serializationInclusion" value="NON_NULL"/>
             </bean>
         </property>
+    </bean>
+
+    <!--设置编码格式-->
+    <bean id="stringHttpMessageConverter" class="org.springframework.http.converter.StringHttpMessageConverter">
+        <constructor-arg value="UTF-8"/>
     </bean>
 
     <!--开启web包下的扫描-->
