@@ -13,19 +13,19 @@ import java.util.Date;
 public class Ad {
 
     /** 广告id*/
-    private Integer adId;
+    private Integer id;
 
     /** 广告标题*/
-    private String adTitle;
+    private String title;
 
     /** 广告图片名称*/
-    private String adImg;
+    private String imgFileName;
 
     /** 广告链接*/
-    private String adLink;
+    private String link;
 
     /** 广告权重 据此来排名*/
-    private Integer adWight;
+    private Integer weight;
 
     /** 广告创建时间*/
     private Date createTime;
