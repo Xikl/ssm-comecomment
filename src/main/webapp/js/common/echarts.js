@@ -55201,7 +55201,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            //      can not be percentage value (like '33%'). See the reason in the
 	            //      layout algorithm below.
 	            //
-	            // bounding: (enum: 'all' (default) | 'raw')
+	            // bounding: (enums: 'all' (default) | 'raw')
 	            //      Specify how to calculate boundingRect when locating.
 	            //      'all': Get uioned and transformed boundingRect
 	            //          from both itself and its descendants.

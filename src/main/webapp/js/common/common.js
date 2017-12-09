@@ -34,12 +34,12 @@ common.ajax = function(param) {
  * 页面返回码定义，与后台PageCode定义对应
  */
 common.pageCode = {
-		"ADD_SUCCESS" : 1000,
-		"MODIFY_SUCCESS" : 1100,
-		"REMOVE_SUCCESS" : 1200
-}
+    "ADD_SUCCESS": 1000,
+    "MODIFY_SUCCESS": 1100,
+    "REMOVE_SUCCESS": 1200
+};
 
 common.menuPrefix = {
-		"PREFIX_MENU" : "MENU_",
-		"PREFIX_ACTION" : "ACTION_"
-}
+    "PREFIX_MENU": "MENU_",
+    "PREFIX_ACTION": "ACTION_"
+};
